@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.form,
+.bookmarksList {
+  background: #ddd;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+.heading {
+  font-size: clamp(30px, 3rem, 3vw);
+  color: #006185;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+label {
+  font-size: clamp(20px, 2rem, 1.5vw);
+  color: #006185;
+  margin: 10px 0px;
+}
+
+input {
+  font-size: 20px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0px;
+  padding: 10px 20px;
+}
+
+.bookmarksList .bookmark-div {
+  width: 90%;
+  font-size: 20px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 0px;
+  padding: 10px 20px;
+}
+
+.bookmarksList .bookmark-div h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.btn {
+  border: none;
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 200ms ease-in;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn.submit-btn {
+  background-color: #2671e2;
+  padding: 15px 40px;
+}
+
+.btn.open-btn {
+  background-color: #3ab84f;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-right: 20px;
+}
+
+.btn.open-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn.remove-btn {
+  background-color: #e22626;
+  text-decoration: none;
+  padding: 5px 13px;
+}

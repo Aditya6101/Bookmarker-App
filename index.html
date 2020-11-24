@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Bookmarker</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body onload="displayBookmarks()">
+    <div class="container">
+      <h2 class="heading">Bookmark Your Favorite Sites</h2>
+      <form class="form">
+        <div class="form-group">
+          <label>Site Name</label>
+          <input type="text" class="siteName" placeholder="Website Name" />
+        </div>
+        <div class="form-group">
+          <label>Site URL</label>
+          <input type="text" class="siteURL" placeholder="Website URL" />
+        </div>
+        <button class="btn submit-btn" type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+      <div class="bookmarks-display">
+        <h3 class="heading">Your Bookmarks</h3>
+        <div class="bookmarksList"></div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
